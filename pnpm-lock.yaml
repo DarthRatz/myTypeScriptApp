@@ -68,8 +68,8 @@ devDependencies:
     specifier: ^4.0.5
     version: 4.0.5
   '@types/node':
-    specifier: ^20.5.6
-    version: 20.5.6
+    specifier: ^22.0.0
+    version: 22.13.9
   '@types/prettier':
     specifier: ^2.7.3
     version: 2.7.3
@@ -138,7 +138,7 @@ devDependencies:
     version: 2.3.0
   knip:
     specifier: 3.13.0
-    version: 3.13.0(@types/node@20.5.6)(typescript@5.2.2)
+    version: 3.13.0(@types/node@22.13.9)(typescript@5.2.2)
   lint-staged:
     specifier: ^15.0.0
     version: 15.0.1
@@ -1289,6 +1289,7 @@ packages:
   /@humanwhocodes/config-array@0.11.10:
     resolution: {integrity: sha512-KVVjQmNUepDVGXNuoRRdmmEjruj0KfiGSbS8LVc12LMsWDQzRXJ0qdhN8L8uUigKpfEHRhlaQFY0ib1tnUbNeQ==}
     engines: {node: '>=10.10.0'}
+    deprecated: Use @eslint/config-array instead
     dependencies:
       '@humanwhocodes/object-schema': 1.2.1
       debug: 4.3.4
@@ -1304,6 +1305,7 @@ packages:
 
   /@humanwhocodes/object-schema@1.2.1:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
+    deprecated: Use @eslint/object-schema instead
     dev: true
 
   /@hutson/parse-repository-url@5.0.0:
@@ -2082,7 +2084,7 @@ packages:
   /@types/jsonwebtoken@9.0.1:
     resolution: {integrity: sha512-c5ltxazpWabia/4UzhIoaDcIza4KViOQhdbjRlfcIGVnsE3c3brkz9Z+F/EeJIECOQP7W7US2hNE930cWWkPiw==}
     dependencies:
-      '@types/node': 20.5.6
+      '@types/node': 22.13.9
     dev: false
 
   /@types/mdast@3.0.10:
@@ -2095,8 +2097,10 @@ packages:
     resolution: {integrity: sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==}
     dev: true
 
-  /@types/node@20.5.6:
-    resolution: {integrity: sha512-Gi5wRGPbbyOTX+4Y2iULQ27oUPrefaB0PxGQJnfyWN3kvEDGM3mIB5M/gQLmitZf7A9FmLeaqxD3L1CXpm3VKQ==}
+  /@types/node@22.13.9:
+    resolution: {integrity: sha512-acBjXdRJ3A6Pb3tqnw9HZmyR3Fiol3aGxRCK1x3d+6CDAMjl7I649wpSd+yNURCjbOUGu9tqtLKnTGxmK6CyGw==}
+    dependencies:
+      undici-types: 6.20.0
 
   /@types/normalize-package-data@2.4.1:
     resolution: {integrity: sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==}
@@ -3064,6 +3068,7 @@ packages:
   /commit-to-co-authors@0.1.0:
     resolution: {integrity: sha512-5v1M+gBD0H7G2++D1L3z8ekVkTsIYNTuUFmL8KgIumuJdZ1CFjRulgUvYA7dFDmZNENu0G//yp+krWGcXb2WYA==}
     engines: {node: '>=18'}
+    deprecated: Renamed to description-to-co-authors. This will work for GitHub issue bodies too.
     dev: false
 
   /compare-func@2.0.0:
@@ -4083,6 +4088,7 @@ packages:
   /eslint@8.48.0:
     resolution: {integrity: sha512-sb6DLeIuRXxeM1YljSe1KEx9/YYeZFQWcV8Rq9HfigmdDEugjLEVEa1ozDjL6YDjBpQHPJxJzze+alxi4T3OLg==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
     dependencies:
       '@eslint-community/eslint-utils': 4.4.0(eslint@8.48.0)
@@ -4572,6 +4578,7 @@ packages:
 
   /glob@7.1.6:
     resolution: {integrity: sha512-LwaxwyZ72Lk7vZINtNNrywX0ZuLyStrdDtabefZKAY5ZGJhVtgdznluResxNmPitE0SAO+O26sWTHeKSI2wMBA==}
+    deprecated: Glob versions prior to v9 are no longer supported
     dependencies:
       fs.realpath: 1.0.0
       inflight: 1.0.6
@@ -4583,6 +4590,7 @@ packages:
 
   /glob@7.2.3:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
+    deprecated: Glob versions prior to v9 are no longer supported
     dependencies:
       fs.realpath: 1.0.0
       inflight: 1.0.6
@@ -4595,6 +4603,7 @@ packages:
   /glob@8.1.0:
     resolution: {integrity: sha512-r8hpEjiQEYlF2QU0df3dS+nxxSIreXQS1qRhMJM0Q5NDdR386C7jb7Hwwod8Fgiuex+k0GFjgft18yvxm5XoCQ==}
     engines: {node: '>=12'}
+    deprecated: Glob versions prior to v9 are no longer supported
     dependencies:
       fs.realpath: 1.0.0
       inflight: 1.0.6
@@ -4928,6 +4937,7 @@ packages:
 
   /inflight@1.0.6:
     resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
+    deprecated: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
     dependencies:
       once: 1.4.0
       wrappy: 1.0.2
@@ -5511,7 +5521,7 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /knip@3.13.0(@types/node@20.5.6)(typescript@5.2.2):
+  /knip@3.13.0(@types/node@22.13.9)(typescript@5.2.2):
     resolution: {integrity: sha512-Qj1FvxeHTXlDmR3TMwNgn88xuSVDd2OjdyvIgMYRcWv/DVSaWGaUHnwm7COcQ28+54fAbsE2UKDEco/5eJv8qg==}
     engines: {node: '>=18.6.0'}
     hasBin: true
@@ -5526,7 +5536,7 @@ packages:
       '@pnpm/logger': 5.0.0
       '@pnpm/workspace.pkgs-graph': 2.0.13(@pnpm/logger@5.0.0)
       '@snyk/github-codeowners': 1.1.0
-      '@types/node': 20.5.6
+      '@types/node': 22.13.9
       chalk: 5.3.0
       easy-table: 1.2.0
       fast-glob: 3.3.2
@@ -5723,6 +5733,7 @@ packages:
 
   /lodash.pick@4.4.0:
     resolution: {integrity: sha512-hXt6Ul/5yWjfklSGvLQl8vM//l3FtyHZeuelpzK6mm99pNvN9yTDruNZPEJZD1oWrqo+izBmB7oUfWgcCX7s4Q==}
+    deprecated: This package is deprecated. Use destructuring assignment syntax instead.
     dev: false
 
   /lodash.reduce@4.6.0:
@@ -7174,6 +7185,7 @@ packages:
 
   /rimraf@3.0.2:
     resolution: {integrity: sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==}
+    deprecated: Rimraf versions prior to v4 are no longer supported
     hasBin: true
     dependencies:
       glob: 7.2.3
@@ -8021,6 +8033,9 @@ packages:
       which-boxed-primitive: 1.0.2
     dev: true
 
+  /undici-types@6.20.0:
+    resolution: {integrity: sha512-Ny6QZ2Nju20vw1SRHe3d9jVu6gJ+4e3+MMpqu7pqE5HT6WsTSlce++GQmK5UXS8mzV8DSYHrQH+Xrf2jVcuKNg==}
+
   /unescape-js@1.1.4:
     resolution: {integrity: sha512-42SD8NOQEhdYntEiUQdYq/1V/YHwr1HLwlHuTJB5InVVdOSbgI6xu8jK5q65yIzuFCfczzyDF/7hbGzVbyCw0g==}
     dependencies:
@@ -8146,7 +8161,7 @@ packages:
       semver: 7.5.4
     dev: true
 
-  /vite-node@0.34.3(@types/node@20.5.6):
+  /vite-node@0.34.3(@types/node@22.13.9):
     resolution: {integrity: sha512-+0TzJf1g0tYXj6tR2vEyiA42OPq68QkRZCu/ERSo2PtsDJfBpDyEfuKbRvLmZqi/CgC7SCBtyC+WjTGNMRIaig==}
     engines: {node: '>=v14.18.0'}
     hasBin: true
@@ -8156,7 +8171,7 @@ packages:
       mlly: 1.4.0
       pathe: 1.1.1
       picocolors: 1.0.0
-      vite: 4.3.3(@types/node@20.5.6)
+      vite: 4.3.3(@types/node@22.13.9)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -8167,7 +8182,7 @@ packages:
       - terser
     dev: true
 
-  /vite@4.3.3(@types/node@20.5.6):
+  /vite@4.3.3(@types/node@22.13.9):
     resolution: {integrity: sha512-MwFlLBO4udZXd+VBcezo3u8mC77YQk+ik+fbc0GZWGgzfbPP+8Kf0fldhARqvSYmtIWoAJ5BXPClUbMTlqFxrA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -8192,7 +8207,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 20.5.6
+      '@types/node': 22.13.9
       esbuild: 0.17.18
       postcss: 8.4.23
       rollup: 3.21.1
@@ -8233,7 +8248,7 @@ packages:
     dependencies:
       '@types/chai': 4.3.5
       '@types/chai-subset': 1.3.3
-      '@types/node': 20.5.6
+      '@types/node': 22.13.9
       '@vitest/expect': 0.34.3
       '@vitest/runner': 0.34.3
       '@vitest/snapshot': 0.34.3
@@ -8252,8 +8267,8 @@ packages:
       strip-literal: 1.0.1
       tinybench: 2.5.0
       tinypool: 0.7.0
-      vite: 4.3.3(@types/node@20.5.6)
-      vite-node: 0.34.3(@types/node@20.5.6)
+      vite: 4.3.3(@types/node@22.13.9)
+      vite-node: 0.34.3(@types/node@22.13.9)
       why-is-node-running: 2.2.2
     transitivePeerDependencies:
       - less
